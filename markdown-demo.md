@@ -97,7 +97,17 @@ Sample text here...
 Syntax highlighting
 
 ```ruby
-
+# A ruby comment
+module ApplicationHelper
+  def full_title(page_title = "")
+    base_title = "My Awesome Site"
+    if page_title.empty?
+      base_title
+    else
+      "#{page_title} | #{base_title}"
+    end
+  end
+end
 ```
 
 ## Tables
