@@ -1,4 +1,4 @@
-# Rendering
+
 
 ```ruby
 # application/controllers/xxx_controller.rb
@@ -36,5 +36,5 @@ def FooController
 end
 ```
 
-advfkvdflsv
+
 
