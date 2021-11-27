@@ -6,8 +6,7 @@ class PostController < ApplicationController
 	def index
 		if session[:q].present?
 			params[:page] = 1
-			# lol, SQL injection?
-			@posts = Post.where "title like ?", "%#{session[:q]}%"
+			@posts = Post.where "title like ?", "%#{session[:q]}%"  # lol, SQL injection?
 		else
 			@posts = Post.all
 		end
